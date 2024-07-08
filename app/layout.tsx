@@ -25,12 +25,7 @@ export default function RootLayout({
                     inter.variable
                 )}
             >
-                <Providers>
-                    <div className="flex flex-col min-h-dvh relative bg-background">
-                        <Header />
-                        <main className="flex-1">{children}</main>
-                    </div>
-                </Providers>
+                <Providers>{children}</Providers>
             </body>
         </html>
     );
