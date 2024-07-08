@@ -7,7 +7,7 @@ type Props = {};
 
 const MessageInput = (props: Props) => {
     return (
-        <div className="flex justify-center my-5">
+        <div className="sticky bottom-0 w-full flex justify-center py-4 bg-background/60 backdrop-blur supports-[background-filter]:bg-background/60">
             <Input
                 type="text"
                 placeholder="Message LocalGPT"

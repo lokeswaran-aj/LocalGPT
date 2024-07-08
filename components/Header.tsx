@@ -11,7 +11,7 @@ type Props = {};
 
 const Header = (props: Props) => {
     return (
-        <header className="sticky top-0 w-full border-b border-border bg-background/95 backdrop-blur supports-[background-filter]:bg-background/60">
+        <header className="sticky top-0 w-full border-b border-border bg-background/60 backdrop-blur supports-[background-filter]:bg-background/60">
             <div className="container max-w-screen-2xl h-14 flex items-center justify-between">
                 <Logo />
                 <div className="flex justify-center items-center">

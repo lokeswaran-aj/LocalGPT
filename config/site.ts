@@ -2,7 +2,7 @@ const siteConfig = {
     name: "LocalGPT",
     url: "https://localgpt.com",
     links: {
-        github: "https://github.com/lokeswaran-aj",
+        github: "https://github.com/lokeswaran-aj/LocalGPT",
         twitter: "https://x.com/lokeswaran_aj",
     },
 };
