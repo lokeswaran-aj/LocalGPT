@@ -3,9 +3,17 @@ import Image from "next/image";
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 const Icons = {
-    logo: () => (
+    logoLight: () => (
         <Image
             src={"/assets/logo-light.png"}
+            width={32}
+            height={32}
+            alt="Logo"
+        />
+    ),
+    logoDark: () => (
+        <Image
+            src={"/assets/logo-dark.png"}
             width={32}
             height={32}
             alt="Logo"

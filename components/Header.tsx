@@ -4,6 +4,8 @@ import React from "react";
 import Icons from "./Icons";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
+import Logo from "./Logo";
+import ModeToggler from "./ModeToggler";
 
 type Props = {};
 
@@ -11,12 +13,9 @@ const Header = (props: Props) => {
     return (
         <header className="sticky top-0 w-full border-b border-border bg-background/95 backdrop-blur supports-[background-filter]:bg-background/60">
             <div className="container max-w-screen-2xl h-14 flex items-center justify-between">
-                <Link href="/" className="flex items-center">
-                    <Icons.logo />
-                    <h1 className="text-xl font-bold">{siteConfig.name}</h1>
-                </Link>
+                <Logo />
                 <div className="flex justify-center items-center">
-                    <nav className="flex items-center">
+                    <nav className="flex items-center gap-1">
                         <Link
                             href={siteConfig.links.github}
                             target="_blank"
@@ -45,6 +44,7 @@ const Header = (props: Props) => {
                                 <Icons.twitter className="w-5 h-5" />
                             </div>
                         </Link>
+                        <ModeToggler />
                     </nav>
                 </div>
             </div>
