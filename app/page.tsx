@@ -1,3 +1,4 @@
+"use client";
 import ChatContainer from "@/components/ChatContainer";
 import Header from "@/components/Header";
 import MessageInput from "@/components/MessageInput";
