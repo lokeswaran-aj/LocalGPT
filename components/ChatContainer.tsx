@@ -1,6 +1,7 @@
 import useMessage from "@/hooks/useMessageStore";
 import { cn } from "@/lib/utils";
 import React from "react";
+import Markdown from "react-markdown";
 
 type Props = {};
 
@@ -18,7 +19,7 @@ const ChatContainer = (props: Props) => {
                             : "bg-muted"
                     )}
                 >
-                    {message.message}
+                    <Markdown>{message.message}</Markdown>
                 </div>
             ))}
         </div>
