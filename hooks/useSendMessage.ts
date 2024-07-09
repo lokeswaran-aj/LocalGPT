@@ -7,6 +7,7 @@ const useSendMessage = () => {
     const sendMessage = async (message: string) => {
         try {
             setIsLoading(true);
+            setMessage({ message, role: "user" });
             const response = await fetch("/api/v1/message", {
                 method: "POST",
                 headers: {
@@ -14,7 +15,6 @@ const useSendMessage = () => {
                 },
                 body: JSON.stringify({ message }),
             });
-            setMessage({ message, role: "user" });
             const data = await response.json();
             setMessage({ message: data.message, role: "ai" });
             return data;
