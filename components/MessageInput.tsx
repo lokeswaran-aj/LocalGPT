@@ -20,9 +20,10 @@ const MessageInput = (props: Props) => {
             <Input
                 type="text"
                 placeholder="Message LocalGPT"
-                className="max-w-screen-sm p-6 focus-visible:ring-0 focus-visible:ring-offset-0  shadow-[0_3px_10px_rgb(0,0,0,0.1)] dark:shadow-[0_3px_10px_rgb(255,255,255,0.1)]"
+                className="max-w-screen-sm p-6 focus-visible:ring-0 focus-visible:ring-offset-0 shadow-[0_3px_10px_rgb(0,0,0,0.1)] dark:shadow-[0_3px_10px_rgb(255,255,255,0.1)]"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                autoFocus
             />
 
             <Button
